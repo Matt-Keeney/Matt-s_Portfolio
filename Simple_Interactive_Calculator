@@ -1,0 +1,20 @@
+Calculator_on = True
+
+while Calculator_on:
+    num1 = int(input("Give me a number: "))
+    num2 = int(input("Give me another number: "))
+    math_action = input("What would you like me to do with these numbers? ").lower()
+    if math_action == "divide":
+        print(num1 / num2)
+    elif math_action == "multiply":
+        print(num1 * num2)
+    elif math_action == "add":
+        print(num1 + num2)
+    elif math_action == "subtract":
+        print(num1 - num2)
+    elif math_action or num1 or num2 != ["add, subtract, multiply, divide"]:
+        print("""Please enter:
+-Divide
+-Multiply
+-Add
+-Subtract""")
